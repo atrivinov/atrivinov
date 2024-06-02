@@ -1,24 +1,68 @@
-<h1 align="center"> ALEXANDRA TRIVIÑO VASQUEZ </h1>
+<h2 align="center"> ALEXANDRA TRIVIÑO VASQUEZ </h2>
 
-![Amarillo Rojo Verde y Rosa CollageMaximalista Jóvenes Adultos Banner de Cumpleaños](https://user-images.githubusercontent.com/81450649/205978103-c648c6b1-71fd-40cd-bbcb-5c9db2a03664.png)
+``` javascript
+class softwareEngineer {
+  constructor(name, title, skills, contact) {
+    this.name = name;
+    this.title = title;
+    this.skills = skills;
+    this.contact = contact;
+  }
 
-> Hola, soy Alexandra Triviño Vasquez, actualmente me encuentro aprendiendo **Desarrollo de Software** y trabajando como **Frontend Developer**. Tengo 29 años, me gusta mucho viajar y conocer lugares nuevos, disfruto mucho pasar tiempo en familia, tengo un perro adorable, Bruno Alexander.
+  introduce() {
+    console.log(`Hola, mi nombre es ${this.name} y soy ${this.title}.`);
+    this.displaySkills();
+    this.displayContact();
+  }
 
+  displaySkills() {
+    console.log('Estas son mis habilidades:');
+    this.skills.forEach( skill => console.log(`- ${skill}`));
+  }
 
-## Las principales tecnologías con las que he interactuado son:
+  displayContact() {
+    console.log('Puedes ponerte en contacto conmingo en las siguientes redes:');
+    console.log(`Email: ${this.contact.email}`);
+    console.log(`Linkedin: ${this.contact.linkedin}`);
+    console.log(`Github: ${this.contact.github}`);
+    console.log(`Instagram: ${this.contact.instagram}`);
+  }
+}
 
-FRONTEND    |  BDS            |  BACKEND        |
----------   | -----           | ---------       |
-💾HTML        | 💾Active Records  | 💾Python          |
-💾JavaScript  | 💾MySQL           | 💾Node Js         |
-💾CSS         | 💾MongoDB         | 💾Express Js      |
-💾Tailwind    |                   | 💾Ruby            |
-💾Boostrap    |                   | 💾Ruby On Rails   |
-💾Stimulus    |                   |                    |
-💾Sass        |                   |                    |
-💾React Js    |                   |                    |
+const miPerfil = softwareEngineer(
+  'Alexandra Triviño Vasquez',
+  'Software Engineer',
+  [
+    'HTML',
+    'CSS',
+    'SaSS',
+    'Javascript',
+    'React',
+    'Jest',
+    'Gherkin',
+    'Ruby',
+    'Rails',
+    'Python',
+    'Cucumber',
+    'Node Js',
+    'Boostrap',
+    'Tailwind CSS',
+    'Express',
+    'MySQL',
+    'POstgreSQL',
+    'Git',
+    'GitHub',
+    'Datadog',
+    'New Relic',
+    'Postman'
+  ],
+  {
+    email: 'alexandratrivino2@gmail.com',
+    linkedin: 'alexandra-trivino',
+    github: 'atrivinov',
+    instagram: 'atrivinov'
+  }
+);
 
-<!---
-atrivinov/atrivinov is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+miPerfil.introduce();
+```
